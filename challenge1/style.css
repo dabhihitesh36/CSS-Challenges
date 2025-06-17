@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --spoiler-color: black;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.post {
+  border-radius: 20px;
+  width: 80%;
+  margin: 5px;
+  padding: 1em;
+  background-color: grey;
+}
+
+.spoiler {
+  background: var(--spoiler-color);
+  color: var(--spoiler-color);
+  transition: background-color 1s ease-in;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.spoiler:hover {
+  background: initial;
+  color: initial;
+}

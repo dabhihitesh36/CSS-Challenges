@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+:root {
+  --font-family: "Karla", sans-serif;
+  --body-bg: #1e1f25;
+  --btn-bg: #000;
+  --btn-color: #cbcbcb;
+  --btn-color-hover: #fff;
+  --grad-color1: #eeaf61;
+  --grad-color2: #fb9062;
+  --grad-color3: #ee5d6c;
+  --grad-color4: #ce4993;
+  --grad-color5: #6a0d83;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: var(--body-bg);
+}
+
+.button-border {
+  background: linear-gradient(
+    115deg,
+    var(--grad-color1),
+    var(--grad-color2),
+    var(--grad-color3),
+    var(--grad-color4),
+    var(--grad-color5)
+  );
+  padding: 3px;
+}
+
+.button {
+  font-family: var(--font-family);
+  background: var(--btn-bg);
+  color: var(--btn-color);
+  padding: 1em 1.5em;
+  border: none;
+  letter-spacing: 0.1em;
+}
+
+.button-border:hover {
+  /* padding: 1.5em 1.8em; */
+  background: linear-gradient(
+    230deg,
+    var(--grad-color1),
+    var(--grad-color2),
+    var(--grad-color3),
+    var(--grad-color4),
+    var(--grad-color5)
+  );
+  cursor: pointer;
+}
+
+.button-border:hover .button {
+  padding: 1.1em 1.5em;
+  color: var(--btn-color-hover);
+  letter-spacing: 0.2em;
+  font-size: 16px;
+  cursor: pointer;
+}
