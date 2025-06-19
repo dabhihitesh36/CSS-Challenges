@@ -67,7 +67,11 @@ img {
 }
 
 .card-stats {
-  display: none;
+  display: flex;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 1s ease-in, height 1s ease-in;
 }
 
 .card-stats ul {
@@ -84,5 +88,6 @@ img {
 }
 
 .card:hover .card-stats {
-  display: flex;
+  opacity: 1;
+  height: auto;
 }
