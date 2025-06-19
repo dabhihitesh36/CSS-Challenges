@@ -9,7 +9,6 @@
 }
 
 .container {
-  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,21 +17,21 @@
 }
 
 .post {
-  border-radius: 20px;
   width: 80%;
-  margin: 5px;
-  padding: 1em;
+  margin-bottom: 8px;
   background-color: grey;
+  padding: 1.3em 1.5em;
+  border-radius: 1em;
+}
+
+p {
+  line-height: 1.3em;
 }
 
 .spoiler {
   background: var(--spoiler-color);
   color: var(--spoiler-color);
-  transition: background-color 1s ease-in;
-}
-
-p {
-  line-height: 1.5em;
+  transition: all 1s ease-in;
 }
 
 .spoiler:hover {
