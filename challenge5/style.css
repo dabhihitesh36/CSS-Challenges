@@ -7,6 +7,9 @@
   --circle-bg: grey;
   --circle-animation-color: rgba(128, 128, 128, 0.637);
 }
+body {
+  background-color: black;
+}
 .container {
   display: flex;
   align-items: center;

@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.ring {
+  position: absolute;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.ring1 {
+  background-color: black;
+  height: 210px;
+  width: 210px;
+}
+.ring2 {
+  background-color: blue;
+  height: 170px;
+  width: 170px;
+}
+.ring3 {
+  background-color: red;
+  height: 130px;
+  width: 130px;
+}
+.ring4 {
+  background-color: yellow;
+  height: 90px;
+  width: 90px;
+}

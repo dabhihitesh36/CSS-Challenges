@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --stage-1: 25%;
+  --stage-2: 50%;
+  --stage-3: 75%;
+  --stage-4: 100%;
+  --progress-bar-bg: grey;
+  --progress-stage-1: red;
+  --progress-stage-2: blue;
+  --progress-stage-3: purple;
+  --progress-stage-4: green;
+}
+
+.container {
+  width: 80%;
+  margin: 60px auto;
+}
+
+.progress-bar {
+  height: 40px;
+  background: var(--progress-bar-bg);
+  border-radius: 40px;
+}
+
+.progress-status {
+  height: 40px;
+  border-radius: 40px;
+}
+
+.stage-1 {
+  width: var(--stage-1);
+  background: var(--progress-stage-1);
+}
+.stage-2 {
+  width: var(--stage-2);
+  background: var(--progress-stage-2);
+}
+.stage-3 {
+  width: var(--stage-3);
+  background: var(--progress-stage-3);
+}
+.stage-4 {
+  width: var(--stage-4);
+  background: var(--progress-stage-4);
+}

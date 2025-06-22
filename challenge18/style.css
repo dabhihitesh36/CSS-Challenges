@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --card-height: 400px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: calc(var(--card-height) * 2 / 3);
+  height: var(--card-height);
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 0.5em;
+  display: grid;
+  font-size: 3em;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+.bottom {
+  transform: rotate(180deg);
+}
+
+.top > div:first-child,
+.bottom > div:first-child {
+  padding-left: 2px;
+}

@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: black;
+  --red: red;
+  --yellow: yellow;
+  --flag-height: 150px;
+}
+
+.flag-germany {
+  display: grid;
+  height: var(--flag-height);
+  width: calc(var(--flag-height) * 5 / 3);
+  margin: 1.5em auto;
+}
+
+.black {
+  background-color: var(--black);
+}
+.red {
+  background-color: var(--red);
+}
+.yellow {
+  background-color: var(--yellow);
+}

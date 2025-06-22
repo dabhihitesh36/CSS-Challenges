@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --flag-height: 150px;
+  --white: white;
+}
+
+.flag-switzerland {
+  height: var(--flag-height);
+  width: calc(var(--flag-height) * 1 / 1);
+  background-color: red;
+  margin: 1em auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.white {
+  grid-row: 2/5;
+  grid-column: 3/4;
+  background-color: white;
+}
+.secwhite {
+  grid-row: 3/4;
+  grid-column: 2/5;
+  background-color: white;
+}

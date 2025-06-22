@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+
+:root {
+  --flag-height: 200px;
+  --circle-color: rgb(184, 56, 77);
+  --flag-bg: white;
+}
+
+.flag-japan {
+  height: var(--flag-height);
+  width: calc(var(--flag-height) * 3 / 2);
+  background-color: var(--flag-bg);
+  margin: 1em auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  height: calc(var(--flag-height) * 3 / 5);
+  width: calc(var(--flag-height) * 3 / 5);
+  background: var(--circle-color);
+  border-radius: 50%;
+}
