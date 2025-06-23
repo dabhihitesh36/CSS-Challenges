@@ -8,9 +8,14 @@ body {
 :root {
   --graph-bg: #000;
   --default-square-bg: #161b22;
-  --level3: darkblue;
-  --level5: blue;
-  --level10: lightskyblue;
+  /* --level0: #ebedf0; */
+  --level1: #c6e48b;
+  --level2: #7bc96f;
+  --level3: #239a3b;
+  --level4: #196127;
+  --level5: #0f451a;
+  --level6: #083c12;
+  --level7: #002d0b;
 }
 
 ul {
@@ -36,14 +41,30 @@ ul {
   border-radius: 2px;
 }
 
+/* [data-value="0"] {
+  background: var(--level0);
+} */
+[data-value="1"] {
+  background: var(--level1);
+}
+
+[data-value="2"] {
+  background: var(--level2);
+}
+
 [data-value="3"] {
   background: var(--level3);
 }
 
+[data-value="4"] {
+  background: var(--level4);
+}
 [data-value="5"] {
   background: var(--level5);
 }
-
-[data-value="10"] {
-  background: var(--level10);
+[data-value="6"] {
+  background: var(--level6);
+}
+[data-value="7"] {
+  background: var(--level7);
 }
