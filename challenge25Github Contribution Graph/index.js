@@ -14,7 +14,7 @@ function generateRandomContributionStats() {
   }
   return contributions;
 }
-
+// function makeGraph() {
 function makeGraph() {
   const graph = document.querySelector(".graph");
   const contributions = generateRandomContributionStats();
